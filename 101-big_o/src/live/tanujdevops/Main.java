@@ -5,6 +5,7 @@ public class Main {
 		printItems(10);
 	}
 
+//	time complexity : O(n)
 	public static void printItems(int n) {
 		for (int i = 0; i < n; i++) {
 			System.out.println(i);
