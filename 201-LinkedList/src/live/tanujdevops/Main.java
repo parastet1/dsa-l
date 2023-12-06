@@ -16,6 +16,10 @@ public class Main {
 		System.out.println();
 		
 		myLinkedList.removeLast();
+		myLinkedList.removeLast();
+		myLinkedList.removeLast();
+		myLinkedList.removeLast();
+		myLinkedList.removeLast();
 		
 		myLinkedList.getHead();
 		myLinkedList.getTail();

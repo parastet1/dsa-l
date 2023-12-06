@@ -43,24 +43,12 @@ public class LinkedList {
 	}
 
 	// O(n)
-	// returning Object we want to return null if the linked list is empty
-	public Object removeLast() {
-		Node temp = head;
-		Node prev = null;
-		Node removed = temp;
-
+	public Node removeLast() {
 		if (length == 0) {
 			return null;
 		}
-
-		// edge case
-		if (length == 1) {
-			head = null;
-			tail = null;
-			length = 0;
-			return removed.value;
-		}
-
+		Node temp = head;
+		Node prev = head;
 		while (temp.next != null) {
 			prev = temp;
 			temp = temp.next;
@@ -68,10 +56,10 @@ public class LinkedList {
 		tail = prev;
 		tail.next = null;
 		length--;
-		removed = temp;
-		temp = null;
-
-		return removed.value;
+		if (length == 0) {
+			head = tail = null;
+		}
+		return temp;
 	}
 
 	public void getHead() {
