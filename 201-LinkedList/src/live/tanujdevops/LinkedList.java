@@ -20,11 +20,26 @@ public class LinkedList {
 		}
 	}
 
+	public LinkedList() {
+	}
+
 	public LinkedList(int value) {
 		var newNode = new Node(value);
 		head = newNode;
 		tail = newNode;
 		length = 1;
+	}
+
+//	O(1)
+	public void append(int value) {
+		var newNode = new Node(value);
+		if (length == 0) {
+			head = tail = newNode;
+		} else {
+			tail.next = newNode;
+			tail = newNode;
+		}
+		length++;
 	}
 
 	public void getHead() {
