@@ -25,5 +25,23 @@ public class Main {
 		myLinkedList.getTail();
 		myLinkedList.getLength();
 		myLinkedList.printList();
+		
+		myLinkedList.prepend(1);
+		myLinkedList.getHead();
+		myLinkedList.getTail();
+		myLinkedList.getLength();
+		myLinkedList.printList();
+		
+		myLinkedList.prepend(2);
+		myLinkedList.getHead();
+		myLinkedList.getTail();
+		myLinkedList.getLength();
+		myLinkedList.printList();
+		
+		myLinkedList.prepend(3);
+		myLinkedList.getHead();
+		myLinkedList.getTail();
+		myLinkedList.getLength();
+		myLinkedList.printList();
 	}
 }

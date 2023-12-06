@@ -42,7 +42,7 @@ public class LinkedList {
 		length++;
 	}
 
-	// O(n)
+//	O(n)
 	public Node removeLast() {
 		if (length == 0) {
 			return null;
@@ -60,6 +60,18 @@ public class LinkedList {
 			head = tail = null;
 		}
 		return temp;
+	}
+
+//	O(1)
+	public void prepend(int value) {
+		Node newNode = new Node(value);
+		if (length == 0) {
+			head = tail = newNode;
+		} else {
+			newNode.next = head;
+			head = newNode;
+		}
+		length++;
 	}
 
 	public void getHead() {
