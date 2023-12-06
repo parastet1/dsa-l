@@ -99,6 +99,21 @@ public class LinkedList {
 		return temp;
 	}
 
+//	O(n)
+	public Node get(int index) {
+		if (index < 0 || index >= length) {
+			return null;
+		}
+
+		Node temp = head;
+
+		for (int i = 0; i < index; i++) {
+			temp = temp.next;
+		}
+
+		return temp;
+	}
+
 	public void getHead() {
 		System.out.println("head: " + (head != null ? head.value : null));
 	}
