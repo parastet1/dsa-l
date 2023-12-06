@@ -8,9 +8,18 @@ public class Main {
 		myLinkedList.append(6);
 		myLinkedList.append(7);
 		
-//		myLinkedList.getHead();
-//		myLinkedList.getTail();
-//		myLinkedList.getLength();
+		myLinkedList.getHead();
+		myLinkedList.getTail();
+		myLinkedList.getLength();
+		myLinkedList.printList();
+		
+		System.out.println();
+		
+		myLinkedList.removeLast();
+		
+		myLinkedList.getHead();
+		myLinkedList.getTail();
+		myLinkedList.getLength();
 		myLinkedList.printList();
 	}
 }

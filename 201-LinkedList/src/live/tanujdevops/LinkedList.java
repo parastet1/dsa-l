@@ -42,12 +42,42 @@ public class LinkedList {
 		length++;
 	}
 
+	public Object removeLast() {
+		Node temp = head;
+		Node prev = null;
+		Node removed = temp;
+
+		if (length == 0) {
+			return null;
+		}
+
+		// edge case
+		if (length == 1) {
+			head = null;
+			tail = null;
+			length = 0;
+			return removed.value;
+		}
+
+		while (temp.next != null) {
+			prev = temp;
+			temp = temp.next;
+		}
+		tail = prev;
+		tail.next = null;
+		length--;
+		removed = temp;
+		temp = null;
+
+		return removed.value;
+	}
+
 	public void getHead() {
-		System.out.println("head: " + head.value);
+		System.out.println("head: " + (head != null ? head.value : null));
 	}
 
 	public void getTail() {
-		System.out.println("tail: " + tail.value);
+		System.out.println("tail: " + (tail != null ? tail.value : null));
 	}
 
 	public void getLength() {
@@ -60,6 +90,7 @@ public class LinkedList {
 			System.out.print(temp.value + " --> ");
 			temp = temp.next;
 		}
+		System.out.println();
 	}
 
 	public void printAll() {
