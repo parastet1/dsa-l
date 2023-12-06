@@ -42,6 +42,8 @@ public class LinkedList {
 		length++;
 	}
 
+	// O(n)
+	// returning Object we want to return null if the linked list is empty
 	public Object removeLast() {
 		Node temp = head;
 		Node prev = null;
