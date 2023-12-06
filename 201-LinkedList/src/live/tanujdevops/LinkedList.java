@@ -47,31 +47,56 @@ public class LinkedList {
 		if (length == 0) {
 			return null;
 		}
+
 		Node temp = head;
 		Node prev = head;
+
 		while (temp.next != null) {
 			prev = temp;
 			temp = temp.next;
 		}
+
 		tail = prev;
 		tail.next = null;
 		length--;
+
 		if (length == 0) {
 			head = tail = null;
 		}
+
 		return temp;
 	}
 
 //	O(1)
 	public void prepend(int value) {
 		Node newNode = new Node(value);
+
 		if (length == 0) {
 			head = tail = newNode;
 		} else {
 			newNode.next = head;
 			head = newNode;
 		}
+
 		length++;
+	}
+
+//	O(1)
+	public Node removeFirst() {
+		if (length == 0) {
+			return null;
+		}
+
+		Node temp = head;
+		head = head.next;
+		temp.next = null;
+		length--;
+
+		if (length == 0) {
+			tail = null;
+		}
+
+		return temp;
 	}
 
 	public void getHead() {
