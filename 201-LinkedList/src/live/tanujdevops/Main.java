@@ -69,17 +69,49 @@ public class Main {
 //		myLinkedList.getLength();
 //		myLinkedList.printList();
 
-		System.out.println("get at index ...");
-		var myLinkedList = new LinkedList(4);
-		myLinkedList.append(5);
-		myLinkedList.append(6);
-		myLinkedList.append(7);
-		myLinkedList.append(0);
-		System.out.println(myLinkedList.get(-1));
-		System.out.println(myLinkedList.get(1).value);
-		System.out.println(myLinkedList.get(0).value);
-		System.out.println(myLinkedList.get(4).value);
-		System.out.println(myLinkedList.get(5));
+//		System.out.println("get at index ...");
+//		var myLinkedList = new LinkedList(4);
+//		myLinkedList.append(5);
+//		myLinkedList.append(6);
+//		myLinkedList.append(7);
+//		myLinkedList.append(0);
+//		System.out.println(myLinkedList.get(-1));
+//		System.out.println(myLinkedList.get(1).value);
+//		System.out.println(myLinkedList.get(0).value);
+//		System.out.println(myLinkedList.get(4).value);
+//		System.out.println(myLinkedList.get(5));
+//		myLinkedList.printList();
+		
+//		set(index, value)
+		
+		LinkedList myLinkedList = new LinkedList(1);
+		myLinkedList.append(1);
+		myLinkedList.printList();
+		System.out.println();
+		
+		System.out.println(myLinkedList.set(0, 0));
+		myLinkedList.printList();
+		System.out.println();
+		
+		System.out.println(myLinkedList.set(-1, 2));
+		myLinkedList.printList();
+		System.out.println();
+		
+		System.out.println(myLinkedList.set(2, 2));
+		myLinkedList.printList();
+		System.out.println();
+		
+		System.out.println(myLinkedList.set(1, 5));
+		myLinkedList.printList();
+		System.out.println();
+		
+		System.out.println();
+		myLinkedList.removeFirst();
+		myLinkedList.removeFirst();
+		myLinkedList.printAll();
+		System.out.println();
+		
+		System.out.println(myLinkedList.set(1, 5));
 		myLinkedList.printList();
 	}
 }
