@@ -114,21 +114,16 @@ public class LinkedList {
 		return temp;
 	}
 
-//	O(1)
+//	O(n)
 	public boolean set(int index, int value) {
-		if (index < 0 || index >= length) {
-			return false;
+		Node temp = get(index);
+
+		if (temp != null) {
+			temp.value = value;
+			return true;
 		}
 
-		Node temp = head;
-
-		for (int i = 0; i < index; i++) {
-			temp = temp.next;
-		}
-
-		temp.value = value;
-
-		return true;
+		return false;
 	}
 
 	public void getHead() {
