@@ -7,6 +7,12 @@ public class TowerOfHanoi {
 		transfer(5, "A", "B", "C");
 	}
 
+	
+//	recurrence relation:
+//	T(n) = 0, n = 0
+//		 = 2.T(n-1) + 1, n > 1
+//	
+//		 = O(2^n) // exponential time
 	public static void transfer(int n, String source, String intermediate, String destination) {
 		if (n == 0)
 			return;
