@@ -137,14 +137,26 @@ public class Main {
 //		System.out.println();
 
 //		remove(index)
+//		LinkedList myLinkedList = new LinkedList(1);
+//		myLinkedList.append(2);
+//		myLinkedList.append(3);
+//		myLinkedList.append(4);
+//		myLinkedList.printAll();
+//		System.out.println();
+//		
+//		myLinkedList.remove(1);
+//		myLinkedList.printAll();
+//		System.out.println();
+
+//		reverse()
 		LinkedList myLinkedList = new LinkedList(1);
 		myLinkedList.append(2);
 		myLinkedList.append(3);
 		myLinkedList.append(4);
 		myLinkedList.printAll();
 		System.out.println();
-		
-		myLinkedList.remove(1);
+
+		myLinkedList.reverse();
 		myLinkedList.printAll();
 		System.out.println();
 	}

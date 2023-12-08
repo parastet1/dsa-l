@@ -174,6 +174,24 @@ public class LinkedList {
 		return true;
 	}
 
+//	reverses in place
+//	O(n)
+	public void reverse() {
+		Node temp = head;
+		head = tail;
+		tail = temp;
+		Node after = temp.next;
+		Node before = null;
+
+		for (int i = 0; i < length; i++) {
+			// steps have to be in the right order
+			after = temp.next;
+			temp.next = before;
+			before = temp;
+			temp = after;
+		}
+	}
+
 	public void getHead() {
 		System.out.println("head: " + (head != null ? head.value : null));
 	}
