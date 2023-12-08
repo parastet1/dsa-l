@@ -150,6 +150,30 @@ public class LinkedList {
 		return true;
 	}
 
+//	O(n)
+	public boolean remove(int index) {
+		if (index < 0 || index >= length) {
+			return false;
+		}
+
+		if (index == 0) {
+			removeFirst();
+			return true;
+		}
+
+		if (index == length - 1) {
+			removeLast();
+			return true;
+		}
+
+		Node prev = get(index - 1);
+		Node temp = prev.next;
+		prev.next = temp.next;
+		temp = null;
+		length--;
+		return true;
+	}
+
 	public void getHead() {
 		System.out.println("head: " + (head != null ? head.value : null));
 	}

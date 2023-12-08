@@ -81,7 +81,7 @@ public class Main {
 //		System.out.println(myLinkedList.get(4).value);
 //		System.out.println(myLinkedList.get(5));
 //		myLinkedList.printList();
-		
+
 //		set(index, value)
 //		
 //		LinkedList myLinkedList = new LinkedList(1);
@@ -113,26 +113,38 @@ public class Main {
 //		
 //		System.out.println(myLinkedList.set(1, 5));
 //		myLinkedList.printList();
-		
+
 //		insert(index,value)
-		LinkedList myLinkedList = new LinkedList(0);
+//		LinkedList myLinkedList = new LinkedList(0);
+//		myLinkedList.append(2);
+//		myLinkedList.printAll();
+//		System.out.println();
+//		
+//		myLinkedList.insert(1, 1);
+//		myLinkedList.printAll();
+//		System.out.println();
+//		
+//		myLinkedList.insert(0, -1);
+//		myLinkedList.printAll();
+//		System.out.println();
+//		
+//		myLinkedList.insert(4, 3);
+//		myLinkedList.printAll();
+//		System.out.println();
+//		
+//		myLinkedList.insert(6, 3);
+//		myLinkedList.printAll();
+//		System.out.println();
+
+//		remove(index)
+		LinkedList myLinkedList = new LinkedList(1);
 		myLinkedList.append(2);
+		myLinkedList.append(3);
+		myLinkedList.append(4);
 		myLinkedList.printAll();
 		System.out.println();
 		
-		myLinkedList.insert(1, 1);
-		myLinkedList.printAll();
-		System.out.println();
-		
-		myLinkedList.insert(0, -1);
-		myLinkedList.printAll();
-		System.out.println();
-		
-		myLinkedList.insert(4, 3);
-		myLinkedList.printAll();
-		System.out.println();
-		
-		myLinkedList.insert(6, 3);
+		myLinkedList.remove(1);
 		myLinkedList.printAll();
 		System.out.println();
 	}
