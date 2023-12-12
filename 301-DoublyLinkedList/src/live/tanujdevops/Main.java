@@ -34,5 +34,22 @@ public class Main {
 		myDLL.getLength();
 		myDLL.printList();
 		System.out.printf("\n\n");
+
+//		prepend(-)
+		myDLL.prepend(1);
+
+		myDLL.getHead();
+		myDLL.getTail();
+		myDLL.getLength();
+		myDLL.printList();
+		System.out.printf("\n\n");
+
+		myDLL.prepend(2);
+
+		myDLL.getHead();
+		myDLL.getTail();
+		myDLL.getLength();
+		myDLL.printList();
+		System.out.printf("\n\n");
 	}
 }
