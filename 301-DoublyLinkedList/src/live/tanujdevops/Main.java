@@ -6,7 +6,14 @@ public class Main {
 		myDLL.getHead();
 		myDLL.getTail();
 		myDLL.getLength();
+		myDLL.printList();
+		
+//		append(-)
+		myDLL.append(2);
 
+		myDLL.getHead();
+		myDLL.getTail();
+		myDLL.getLength();
 		myDLL.printList();
 	}
 }

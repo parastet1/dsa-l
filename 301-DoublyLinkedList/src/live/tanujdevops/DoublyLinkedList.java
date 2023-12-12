@@ -34,6 +34,19 @@ public class DoublyLinkedList {
 		System.out.println("length: " + length);
 	}
 
+//	O(1)
+	public void append(int value) {
+		Node newNode = new Node(value);
+		if (head == null) {
+			head = tail = newNode;
+		} else {
+			tail.next = newNode;
+			newNode.prev = tail;
+			tail = newNode;
+		}
+		length++;
+	}
+
 	public void printList() {
 		Node temp = head;
 		while (temp != null) {
