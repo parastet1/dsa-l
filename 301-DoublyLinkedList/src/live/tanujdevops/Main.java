@@ -7,7 +7,8 @@ public class Main {
 		myDLL.getTail();
 		myDLL.getLength();
 		myDLL.printList();
-		
+		System.out.printf("\n\n");
+
 //		append(-)
 		myDLL.append(2);
 
@@ -15,5 +16,23 @@ public class Main {
 		myDLL.getTail();
 		myDLL.getLength();
 		myDLL.printList();
+		System.out.printf("\n\n");
+
+//		removeLast()
+		System.out.println("removed: " + myDLL.removeLast().value);
+
+		myDLL.getHead();
+		myDLL.getTail();
+		myDLL.getLength();
+		myDLL.printList();
+		System.out.printf("\n\n");
+
+		System.out.println("removed: " + myDLL.removeLast().value);
+
+		myDLL.getHead();
+		myDLL.getTail();
+		myDLL.getLength();
+		myDLL.printList();
+		System.out.printf("\n\n");
 	}
 }

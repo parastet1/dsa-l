@@ -23,11 +23,11 @@ public class DoublyLinkedList {
 	}
 
 	public void getHead() {
-		System.out.println("head: " + head.value);
+		System.out.println("head: " + (head == null ? null : head.value));
 	}
 
 	public void getTail() {
-		System.out.println("tail: " + tail.value);
+		System.out.println("tail: " + (tail == null ? null : tail.value));
 	}
 
 	public void getLength() {
@@ -47,10 +47,28 @@ public class DoublyLinkedList {
 		length++;
 	}
 
+//	O(1)
+	public Node removeLast() {
+		if (head == null) {
+			return null;
+		}
+		Node temp = tail;
+		if (length == 1) {
+			head = null;
+			tail = null;
+		} else {
+			tail = tail.prev;
+			tail.next = null;
+			temp.prev = null;
+		}
+		length--;
+		return temp;
+	}
+
 	public void printList() {
 		Node temp = head;
 		while (temp != null) {
-			System.out.println(temp.value);
+			System.out.print("<--" + temp.value + "-->");
 			temp = temp.next;
 		}
 	}
