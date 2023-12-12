@@ -76,5 +76,20 @@ public class Main {
 		myDLL.getLength();
 		myDLL.printList();
 		System.out.printf("\n\n");
+
+//		get(-)
+		myDLL.append(0);
+		myDLL.append(1);
+		myDLL.append(2);
+		myDLL.append(3);
+		myDLL.printList();
+		System.out.printf("\n\n");
+
+		System.out.println("get: " + myDLL.get(0).value);
+		System.out.println("get: " + myDLL.get(1).value);
+		System.out.println("get: " + myDLL.get(2).value);
+		System.out.println("get: " + myDLL.get(3).value);
+		System.out.println("get: " + myDLL.get(4));
+		System.out.println("get: " + myDLL.get(-4));
 	}
 }
