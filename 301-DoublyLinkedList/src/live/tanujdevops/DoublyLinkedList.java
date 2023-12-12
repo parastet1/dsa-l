@@ -78,6 +78,23 @@ public class DoublyLinkedList {
 		length++;
 	}
 
+//	O(1)
+	public Node removeFirst() {
+		if (head == null) {
+			return null;
+		}
+		Node temp = head;
+		if (length == 1) {
+			head = tail = null;
+		} else {
+			head = head.next;
+			head.prev = null;
+			temp.next = null;
+		}
+		length--;
+		return temp;
+	}
+
 	public void printList() {
 		Node temp = head;
 		while (temp != null) {

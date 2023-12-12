@@ -51,5 +51,30 @@ public class Main {
 		myDLL.getLength();
 		myDLL.printList();
 		System.out.printf("\n\n");
+
+//		removeFirst()
+		System.out.println("removed: " + myDLL.removeFirst().value);
+
+		myDLL.getHead();
+		myDLL.getTail();
+		myDLL.getLength();
+		myDLL.printList();
+		System.out.printf("\n\n");
+
+		System.out.println("removed: " + myDLL.removeFirst().value);
+
+		myDLL.getHead();
+		myDLL.getTail();
+		myDLL.getLength();
+		myDLL.printList();
+		System.out.printf("\n\n");
+
+		System.out.println("removed: " + myDLL.removeFirst());
+
+		myDLL.getHead();
+		myDLL.getTail();
+		myDLL.getLength();
+		myDLL.printList();
+		System.out.printf("\n\n");
 	}
 }
